@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LoginController {
+    @GetMapping("/")
+    public String defaultPage() {
+        return "loginPage";
+    }
+
     @GetMapping("/loginPage")
     public String loginForm(Model loginModel) {
         loginModel.addAttribute("loginForm", new LoginForm());
