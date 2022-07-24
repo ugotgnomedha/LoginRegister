@@ -1,1 +1,1 @@
-web: java -Dlogreg=logreg.properties -jar target/LoginRegister-1.0-SNAPSHOT.jar
+web: java -Dlogreg=logreg.properties -Dserver.port=$PORT $JAVA_OPTS -jar target/LoginRegister-1.0-SNAPSHOT.jar
