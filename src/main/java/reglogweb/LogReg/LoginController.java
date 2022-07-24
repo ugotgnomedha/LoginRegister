@@ -23,7 +23,7 @@ public class LoginController {
     public String loginSubmit(@ModelAttribute("loginForm") LoginForm loginForm) {
         String answer = LoginEstablish.startLogin(loginForm.getEmailLogin(), loginForm.getPasswordLogin());
         if (answer.equals("verified")) {
-            return "redirect:/file";
+            return "Welcome!";
         } else if (answer.equals("not_verified")) {
             EmailAuth.sendAuthEmail(loginForm.getEmailLogin(), LoginEstablish.userNameTempLogin, loginForm.getPasswordLogin());
             return "redirect:/verificationEmailPage";
