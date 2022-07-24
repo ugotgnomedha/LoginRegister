@@ -47,9 +47,10 @@ public class EmailAuth {
         props.put("mail.smtp.debug", "false");
         props.put("mail.smtp.port", "587");
 
+        //main account password: securepassword123
         Session session = Session.getInstance(props, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, "securepassword123");
+                return new PasswordAuthentication(from, "rbdnellbdgoyvojq");
             }
         });
 

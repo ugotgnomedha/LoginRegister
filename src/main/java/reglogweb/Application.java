@@ -12,5 +12,3 @@ public class Application {
         ConfigGetter.getConfig(configPath);
     }
 }
-
-// java -Dlogreg=... -jar ...
