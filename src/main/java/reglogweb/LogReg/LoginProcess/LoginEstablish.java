@@ -3,6 +3,7 @@ package reglogweb.LogReg.LoginProcess;
 import reglogweb.ConfigGetter;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import reglogweb.LogReg.UsersTableCreate.CreateUsersTable;
 
 import java.sql.*;
 
@@ -11,6 +12,9 @@ public class LoginEstablish {
     public static String userNameTempLogin = "";
 
     public static String startLogin(String email, String password) {
+        //Check if table exists.
+        CreateUsersTable.createUsersTable();
+
         userNameTempLogin = "";
         return runConnectionLogin(email, password);
     }
