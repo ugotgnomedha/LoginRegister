@@ -1,0 +1,1 @@
+web: java -Dlogreg=logreg.properties -jar target/LoginRegister-1.0-SNAPSHOT.jar
