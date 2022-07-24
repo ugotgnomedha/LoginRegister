@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
     @GetMapping("/")
     public String defaultPage() {
-        return "loginPage";
+        return "redirect:/loginPage";
     }
 
     @GetMapping("/loginPage")
