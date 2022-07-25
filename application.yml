@@ -1,0 +1,15 @@
+#server:
+#  port:8080
+#servlet:
+#  context-path: /loginPage
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          facebook:
+#            client-id: 5214585528624572
+#            client-secret: 1e58d2b06f17e490e399cd61f7f0fafa
+#            scope:
+#              - email
+#              - profile

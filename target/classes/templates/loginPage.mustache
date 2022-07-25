@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/loginRegisterPageStyle.css">
-
+    <link rel="shortcut icon" type="image/png" th:href="@{/assets/images/filterIcon.png}"/>
     <meta name="robots" content="noindex, follow">
 <body>
 <div class="limiter">
@@ -43,9 +43,13 @@
                     </button>
                 </div>
                 <div class="text-center p-t-12">
-<span class="txt1">
-Забыли
-</span>
+                    <div class="container-login100-form-btn">
+                        <p th:href="@{./getToken}">Войти с Facebook  </p>
+                        <a href="./getToken">&#8203<img src="assets/images/fb_logo.png" width="20" height="20"/></a>
+                    </div>
+                    <span class="txt1">
+                        Забыли
+                    </span>
                     <a class="txt2" href="#">
                         Пользователь / Пароль?
                     </a>
